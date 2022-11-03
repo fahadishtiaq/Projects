@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>HTML/CSS House</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">    
+  <link rel="stylesheet" href="styles/styles.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.house {
+  width: 500px;
+  height: 421px;
+  background: #081725;
+  position: relative;
+}
+
+.wall {
+  position: absolute;
+  width: 370px;
+  height: 200px;
+  background: #F7901D;
+  left: 65px;
+  top: 193px;
+}
+
+
+.exhaust {
+  position: absolute;
+  width: 50px;
+  height: 100px;
+  background: #F7901D;
+  left: 65px;
+  top: 70px;
+}
+
+
+.door {
+  position: absolute;
+  width: 86px;
+  height: 117px;
+  background: #E26425;
+  left: 207px;
+  top: 276px;
+}
+
+
+.doorHandle {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #081725;
+  left: 217px;
+  top: 328px;
+}
+
+.roof {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-left: 240px solid transparent;
+  border-right: 240px solid transparent;
+  border-bottom: 172px solid #F7901D;
+  left: 10px;
+  top: 21px;
+}
+
+.windowleft {
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  left: 110px;
+  top: 130px;
+}
+
+.windowright {
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  right: 110px;
+  top: 130px;
+}
+
+table, th, td {
+  border: 10px solid #F7901D;
+  border-collapse: collapse;
+}
+
+th, td {
+  background-color: #081725;
+}
+</style>  
+  
+</head>
+
+<body>
+
+	<div class="house"> 
+		<div class="roof"></div>
+		<div class="windowleft">
+        <table style="width:100%">
+        <tr>
+        <th>&nbsp;&nbsp;</th>
+        <th>&nbsp;&nbsp;</th> 
+        </tr>
+        <tr>
+        <td>&nbsp;&nbsp;</td>
+        <td>&nbsp;&nbsp;</td>
+        </tr>
+        </table>
+		</div>
+		<div class="windowright">
+        <table style="width:100%">
+        <tr>
+        <th>&nbsp;&nbsp;</th>
+        <th>&nbsp;&nbsp;</th> 
+        </tr>
+        <tr>
+        <td>&nbsp;&nbsp;</td>
+        <td>&nbsp;&nbsp;</td>
+        </tr>
+        </table>
+		</div>
+		<div class="wall"></div>
+		<div class="exhaust"></div>
+		<div class="door"></div>
+		<div class="doorHandle"></div>
+	</div>
+
+</body>
+
+</html>
